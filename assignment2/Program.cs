@@ -9,4 +9,19 @@ b = Convert.ToInt32(Console.ReadLine());
 Console.Write("Please enter c: ");
 c = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"result: {(((a + b)/c)*a)}");
+try
+{
+    Console.WriteLine($"result: {(((a + b) / c) * a)}");
+}
+catch(DivideByZeroException e)
+{
+    Console.WriteLine($"Illegal operation performed {e.Message}");
+}
+catch(Exception ex)
+{
+    throw ex;
+}
+finally
+{
+    Console.WriteLine("Exited the program");
+}
