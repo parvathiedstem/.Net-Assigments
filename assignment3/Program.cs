@@ -1,6 +1,4 @@
-﻿using System.Threading.Channels;
-
-int allowedchances = 5;
+﻿int allowedchances = 5;
 int guessingValue= 0;
 
 
@@ -12,9 +10,9 @@ for (int i = 0; i <= allowedchances; i++)
 {
     Console.WriteLine("Enter the guess value: ");
     guessingValue = Convert.ToInt32(Console.ReadLine());
-    int Chances = (allowedchances-1) - i;
-    Console.WriteLine($"remaining chances left {Chances}");
-    if (Chances == 0)
+    int chances = (allowedchances-1) - i;
+    Console.WriteLine($"remaining chances left {chances}");
+    if (chances == 0)
     {
         Console.WriteLine("You Lost");
     }
