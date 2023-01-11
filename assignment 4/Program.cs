@@ -1,30 +1,38 @@
 ﻿int amount = 10000;
 int pin = 5869;
 int cardnumber = 45786;
-int amountToWithdraw = 0;
-int balanceAmount = 0;
-int amountToDeposit = 0;
 int choices = 0;
 
 
 
-int Deposit()
+
+
+void Balance()
 {
-    Console.WriteLine("Enter the amount to be deposite");
-    amountToDeposit = Convert.ToInt32(Console.ReadLine());
-    amountToDeposit = balanceAmount + amountToDeposit;
-    return amountToDeposit;
+    Console.WriteLine($"The current balance in your account is {amount}: ");
 }
 
-int Withdraw()
+void Deposit()
+{
+    Console.WriteLine("Enter the amount to be deposite");
+    int amountToDeposit = Convert.ToInt32(Console.ReadLine());
+    amount += amountToDeposit;
+    Balance();
+}
+
+void Withdraw()
 {
     Console.WriteLine("Enter the amount to withdraw");
-    amountToWithdraw = Convert.ToInt32(Console.ReadLine());
+    int amountToWithdraw = Convert.ToInt32(Console.ReadLine());
     if (amount >= amountToWithdraw)
     {
-        balanceAmount = amount - amountToWithdraw;
+        amount -= amountToWithdraw;
     }
-       return amountToWithdraw;
+    else
+    {
+        Console.WriteLine("Insufficient Balance");
+    }
+    Balance();
 }
 
 void Mainmenu()
@@ -42,7 +50,7 @@ try
     int pinNumber = Convert.ToInt32(Console.ReadLine());
     Console.Write("Enter card number: ");
     int cardNumber = Convert.ToInt32(Console.ReadLine());
-    if ((pinNumber.Equals(pin)) & (cardNumber.Equals(cardnumber)))
+    if (pin == pinNumber && cardnumber == cardNumber)
     {
         while (!choices.Equals(4))
         {
@@ -50,16 +58,13 @@ try
             switch (choices)
             {
                 case 1:
-                    Console.WriteLine($"The current balance in your account is {amount}: ");
+                    Balance();
                     break;
                 case 2:
                     Withdraw();
-                    Console.WriteLine($"Please collect the cash { amountToWithdraw}");
-                    Console.WriteLine($"The current balance is now {balanceAmount}");
                     break;
                 case 3:
                     Deposit();
-                    Console.WriteLine($"The current balance in the account is{amountToDeposit}");
                     break;
                 case 4:
                     Console.WriteLine("Thank you for using ATM");

@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assignment2", "assignment2\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assignment3", "assignment3\assignment3.csproj", "{818F7A15-2C69-4D1D-8C0E-EA7DBDE91792}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "advancedconstructs", "advancedconstructs\advancedconstructs.csproj", "{8BB03EC7-81DA-4BA4-829E-45B68758C695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "advancedconstructs", "advancedconstructs\advancedconstructs.csproj", "{8BB03EC7-81DA-4BA4-829E-45B68758C695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "assignment 4", "assignment 4\assignment 4.csproj", "{6170AFE4-EA8D-4941-B743-76678746F704}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assignment 4", "assignment 4\assignment 4.csproj", "{6170AFE4-EA8D-4941-B743-76678746F704}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
