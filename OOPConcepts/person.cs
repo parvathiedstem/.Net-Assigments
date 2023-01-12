@@ -1,12 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOPConcepts
+﻿//Encapsulation
+class Person
 {
-    internal class Class1
+    public Person(string firstName, string lastName, int age, double salary)
     {
+        FirstName = firstName;
+        LastName = lastName;
+        Age = age;
+        _salary = salary;
+    }
+
+    // Properties
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int Age { get; set; }
+
+    //Fields
+    private double _salary;
+
+    //Methods
+    public void SetSalary(double salary)
+    {
+        _salary = 1000;
+    }
+    public double GetSalary()
+    {
+        return _salary;
+    }
+    public string GetFullName()
+    {
+        return FirstName + " " + LastName;
+    }
+
+    // Method Overloading
+    public string GetFullName(string middleName)
+    {
+        return FirstName + " " + middleName + " " + LastName;
     }
 }

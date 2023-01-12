@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOPConcepts
+﻿abstract class Shape : IShape
 {
-    internal class Class1
+    public int Height { get; set; }
+    public int Width { get; set; }
+    public virtual double CalculateArea()
     {
+        return Width * Height;
     }
 }
