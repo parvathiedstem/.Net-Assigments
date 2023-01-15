@@ -1,0 +1,1 @@
+﻿public record BankStatement(DateOnly date, double Amount, string ToAccount);

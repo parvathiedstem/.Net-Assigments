@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryBasedAddressBook", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopingCart", "ShopingCart\ShopingCart.csproj", "{44CA1A28-497F-4C92-99E6-0B4FABFB75AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrenchDeck", "FrenchDeck\FrenchDeck.csproj", "{9998A2C5-A54E-4243-84CC-BF28DB689AFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount", "BankAccount\BankAccount.csproj", "{DF27A62B-D69C-49EC-BCF1-4B6ED8278607}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{44CA1A28-497F-4C92-99E6-0B4FABFB75AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44CA1A28-497F-4C92-99E6-0B4FABFB75AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44CA1A28-497F-4C92-99E6-0B4FABFB75AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9998A2C5-A54E-4243-84CC-BF28DB689AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9998A2C5-A54E-4243-84CC-BF28DB689AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9998A2C5-A54E-4243-84CC-BF28DB689AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9998A2C5-A54E-4243-84CC-BF28DB689AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF27A62B-D69C-49EC-BCF1-4B6ED8278607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF27A62B-D69C-49EC-BCF1-4B6ED8278607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF27A62B-D69C-49EC-BCF1-4B6ED8278607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF27A62B-D69C-49EC-BCF1-4B6ED8278607}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
